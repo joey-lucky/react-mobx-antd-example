@@ -1,0 +1,86 @@
+{
+  "name": "react-webpack4-example",
+  "version": "1.0.0",
+  "description": "react-webpack4-example 示例代码，用于快速构建web项目",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&&webpack-dev-server",
+    "build": "set NODE_ENV=production&&webpack"
+  },
+  "files": [
+    "bin",
+    "config",
+    "scripts"
+  ],
+  "author": "hjoey",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^4.0.3",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.1.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.1",
+    "@types/node": "^13.9.2",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "@types/webpack": "^4.41.8",
+    "add": "^2.0.6",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^3.1.0",
+    "cross-spawn": "^7.0.1",
+    "css-loader": "^3.4.2",
+    "express": "^4.17.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "react-dev-utils": "^10.2.1",
+    "style-loader": "^1.1.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.42.0",
+    "webpack-bundle-analyzer": "^3.6.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2",
+    "yarn": "^1.22.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "http://localhost:8080/open/admin",
+  "cdnHost": "",
+  "resolveAlias": {
+    "@pages": "src/pages",
+    "@components": "src/components",
+    "@utils": "src/utils",
+    "@stores": "src/stores",
+    "@routes": "src/routes",
+    "@services": "src/stores"
+  },
+  "proxy": {
+    "/open/api": "http://localhost:3000"
+  }
+}
